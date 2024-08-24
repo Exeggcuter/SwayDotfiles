@@ -1,0 +1,14 @@
+{
+   "version": 3,
+   "mode": "MODE_VIDEO",
+   "data_source": "/home/nathan/Videos/Hidamari/mylivewallpapers-com-Glittering-Stars-4K.mp4",
+   "is_mute": false,
+   "audio_volume": 50,
+   "is_static_wallpaper": true,
+   "static_wallpaper_blur_radius": 5,
+   "is_detect_maximized": false,
+   "fade_duration_sec": 1.5,
+   "fade_interval": 0.1,
+   "is_show_systray": false,
+   "is_first_time": false
+}

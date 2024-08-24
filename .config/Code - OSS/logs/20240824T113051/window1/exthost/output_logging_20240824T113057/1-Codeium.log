@@ -1,0 +1,62 @@
+(VSCode) 2024-08-24 11:30:59.634 [INFO]: No proxy settings found
+(VSCode) 2024-08-24 11:31:00.843 [INFO]: Creating manager directory: /tmp/16ba631b-e725-4a25-8406-c60ae14efe39/codeium/manager
+(VSCode) 2024-08-24 11:31:01.319 [INFO]: Using cached LS with valid crc32: /home/nathan/.vscode-oss/extensions/codeium.codeium-1.12.6-universal/dist/380c7c9c022eebd0772a9eca3800839b5b4db78c/language_server_linux_x64
+(VSCode) 2024-08-24 11:31:01.330 [INFO]: Language server started
+2024/08/24 11:31:01 maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined
+I0824 11:31:01.535368  3927 main.go:415] [Logging] Initialized the logger
+I0824 11:31:01.535464  3927 main.go:512] Setting GOMAXPROCS to 8
+I0824 11:31:01.535599  3927 main.go:672] Starting language server manager with pid 3927
+I0824 11:31:01.535686  3927 main.go:118] Manager acquired its lock file /tmp/16ba631b-e725-4a25-8406-c60ae14efe39/codeium/manager/locks/manager.lock
+I0824 11:31:01.536391  3927 main.go:257] Waiting for random port file in /tmp/16ba631b-e725-4a25-8406-c60ae14efe39/codeium/manager/child_random_port_1724491861535802950_6269479473311207508 to be created
+2024/08/24 11:31:01 maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined
+I0824 11:31:01.707383  3947 main.go:415] [Logging] Initialized the logger
+I0824 11:31:01.707466  3947 main.go:512] Setting GOMAXPROCS to 4
+I0824 11:31:01.707629  3947 main.go:666] Starting language server process with pid 3947
+I0824 11:31:01.707671  3947 server.go:161] Language server will attempt to listen on host 127.0.0.1
+I0824 11:31:01.708469  3947 server.go:168] Language server listening on random port at 36015
+I0824 11:31:01.708589  3947 proxy.go:113] proxyplease.proxy> No proxy provided. Attempting to infer from system.
+I0824 11:31:01.708624  3947 proxy.go:113] proxyplease.proxy> No proxy could be determined. Assuming a direct connection.
+I0824 11:31:01.708652  3947 client.go:589] [DEBUG] GET https://server.codeium.com/exa.api_server_pb.ApiServerService/GetCompletions
+I0824 11:31:02.130166  3947 unleash.go:91] Initializing Unleash
+I0824 11:31:02.529661  3947 unleash.go:111] Successfully initialized Unleash
+E0824 11:31:02.542298  3947 client_manager.go:270] Metadata is nil when trying to refresh user JWT
+I0824 11:31:02.542887  3947 server.go:363] Successfully created API server client
+I0824 11:31:02.588761  3947 server.go:372] Successfully initialized tokenizer
+E0824 11:31:02.589208  3947 context_module.go:367] unable to get default pinned context guideline: open /home/nathan/.codeium/codeium_settings.yaml: no such file or directory
+I0824 11:31:02.589281  3947 server.go:485] Local search is enabled, will index local files.
+I0824 11:31:02.589297  3947 server.go:489] Using 2 indexer workers
+I0824 11:31:02.589336  3947 sqlite_faiss_db_client.go:70] Using database at /home/nathan/.codeium/database/9c0694567290725d9dcba14ade58e297/2/MODEL_EMBED_6591
+I0824 11:31:02.590494  3947 sqlite_faiss_db_client.go:84] Successfully created embedding search database in 1ms
+I0824 11:31:02.590825  3947 indexer.go:215] Using 4 embed workers
+I0824 11:31:02.590879  3947 search_provider.go:269] Successfully created and started indexer
+I0824 11:31:02.590906  3947 search_provider.go:299] Successfully created embedding search provider with db client: &{0xc0022ec980 0xc002298fc0}
+I0824 11:31:02.596820  3947 server.go:564] Successfully created completion provider
+I0824 11:31:02.596905  3947 server.go:614] Child process attempting to acquire lock file /tmp/16ba631b-e725-4a25-8406-c60ae14efe39/codeium/manager/locks/child_lock_1724491861535854498_5475705010797402253
+I0824 11:31:02.596941  3947 server.go:622] Child process acquired lock file /tmp/16ba631b-e725-4a25-8406-c60ae14efe39/codeium/manager/locks/child_lock_1724491861535854498_5475705010797402253
+I0824 11:31:02.605580  3947 server.go:188] LSP listening on random port at 39661
+I0824 11:31:02.606147  3947 web_server.go:240] Chat Web Server listening at ws://127.0.0.1:41967
+39661
+I0824 11:31:02.640658  3927 main.go:293] Language server manager found random server port 36015
+I0824 11:31:02.640769  3927 main.go:294] Language server manager found random lsp port 39661
+I0824 11:31:02.640846  3927 main.go:301] Language server manager attempting to connect to language server at 127.0.0.1:36015
+I0824 11:31:02.661332  3927 main.go:172] Fixing language server port at 36015
+I0824 11:31:02.661354  3927 main.go:352] Language server manager successfully connected to new language server at 127.0.0.1:36015
+(VSCode) 2024-08-24 11:31:02.739 [INFO]: Found language server running on port 36015
+I0824 11:31:02.751753  3947 utils.go:185] Analyzing workspace files for /etc/sway/
+I0824 11:31:02.751898  3947 utils.go:245] Done analyzing workspace files for /etc/sway/
+I0824 11:31:02.751907  3947 lsp.go:208] Found 17 files in workspace /etc/sway/
+I0824 11:31:02.752040  3947 lsp.go:232] Adding workspace listener for [0xc00018b960]
+I0824 11:31:02.752146  3947 indexing_listener.go:238] Add workspace event with uid 1 for workspace /etc/sway/
+I0824 11:31:02.758017  3947 lazy_model.go:32] Successfully created faiss index
+I0824 11:31:02.767061  3947 indexing_listener.go:297] Done enqueue workspace with uid 1
+I0824 11:31:02.800472  3947 rpcs_miscellaneous.go:323] University version is up to date.
+I0824 11:31:02.804625  3947 rpcs_miscellaneous.go:205] Downloading changelog from https://exafunction.github.io/public/changelog/1.12.md
+I0824 11:31:02.816380  3947 rpcs_miscellaneous.go:209] No changelog found at https://exafunction.github.io/public/changelog/1.12.md
+(VSCode) 2024-08-24 11:32:40.422 [INFO]: Completion request succeeded (730.7ms)
+(VSCode) 2024-08-24 11:32:40.424 [INFO]: No completions were generated
+(VSCode) 2024-08-24 11:32:40.425 [INFO]: provideInlineCompletionItems request succeeded (735.07ms)
+(VSCode) 2024-08-24 11:32:41.335 [INFO]: Completion request was cancelled by token (396.61ms)
+(VSCode) 2024-08-24 11:32:41.497 [INFO]: Completion request was cancelled by token (112.97ms)
+(VSCode) 2024-08-24 11:32:42.141 [INFO]: Completion request succeeded (593.12ms)
+(VSCode) 2024-08-24 11:32:42.142 [INFO]: No completions were generated
+(VSCode) 2024-08-24 11:32:42.142 [INFO]: provideInlineCompletionItems request succeeded (595.59ms)

@@ -1,0 +1,136 @@
+//{
+ //   "include": [
+   //     "/usr/share/sway/templates/waybar/config.jsonc"
+    //]
+//}
+
+
+{
+	"layer": "top", // Waybar at top layer
+	"height": 25, // Waybar height (to be removed for auto height)
+	// Choose the order of the modules
+	"modules-left": ["custom/media", "tray", "wlr/taskbar"],
+	"modules-center": ["sway/window"],
+	"modules-right": ["idle_inhibitor", "sndio",
+		"pulseaudio",
+		"network", "cpu", "memory", "temperature", "backlight", "battery", "custom/keyboard_layout", "clock"],
+	// Modules configuration
+
+	"wlr/taskbar" : {
+		"on-click": "activate",
+		"on-click-middle": "close"
+	},
+
+	"idle_inhibitor": {
+		"format": "{icon}",
+		"format-icons": {
+			"activated": "",
+			"deactivated": ""
+		}
+	},
+
+	"tray": {
+		// "icon-size": 21,
+		"spacing": 10
+	},
+
+	"clock": {
+		"tooltip-format": "{:%Y-%m-%d | %H:%M}",
+		"format-alt": "{:%Y-%m-%d}",
+		"locale": "C"
+	},
+
+	"cpu": {
+		"format": "{usage}% ",
+		"tooltip": true
+	},
+
+	"memory": {
+		"format": "{}% "
+	},
+
+	"temperature": {
+		"thermal-zone": 5,
+		// "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+		"critical-threshold": 80,
+		// "format-critical": "{temperatureC}°C {icon}",
+		"format": "{temperatureC}°C {icon}",
+		"format-icons": ["", "", ""]
+	},
+
+	"backlight": {
+		// "device": "acpi_video1",
+		"format": "{percent}% {icon}",
+		"format-icons": ["", ""],
+		"on-scroll-up": "brightnessctl set +5%",
+		"on-scroll-down":"brightnessctl set 5%-"
+	},
+
+	"battery": {
+		"states": {
+			"good": 75,
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{capacity}% {icon}",
+		"format-charging": "{capacity}% ",
+		"format-plugged": "{capacity}% ",
+		"format-alt": "{time} {icon}",
+		// "format-good": "", // An empty format will hide the module
+		// "format-full": "",
+		"format-icons": ["", "", "", "", ""]
+	},
+
+	"network": {
+		"format-wifi": "{essid} ({signalStrength}%) ",
+		"format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+		"format-linked": "{ifname} (No IP) ",
+		"format-disconnected": "Disconnected ⚠",
+		"format-alt": "{ifname}: {ipaddr}/{cidr}",
+		"on-click-right": "quickiwctl"
+	},
+
+	"pulseaudio": {
+		"scroll-step": 1,
+		"format": "{volume}% {icon} {format_source}",
+		"format-bluetooth": "{volume}% {icon} {format_source}",
+		"format-bluetooth-muted": " {icon} {format_source}",
+		"format-muted": " {format_source}",
+		"format-source": "{volume}% ",
+		"format-source-muted": "",
+		"format-icons": {
+			"headphones": "",
+			"handsfree": "",
+			"headset": "",
+			"phone": "",
+			"portable": "",
+			"car": "",
+			"default": ["", "", ""]
+		},
+		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"on-click-right": "pavucontrol"
+	},
+
+	"sndio": {
+		"format": "{raw_value} 🎜",
+		"scroll-step": 3
+	},
+
+	"custom/media": {
+		"format": "{icon} {}",
+		"return-type": "json",
+		"max-length": 40,
+		"format-icons": {
+			"spotify": "",
+			"default": "🎜"
+		},
+		"escape": true,
+		"exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"
+	},
+
+	"custom/keyboard_layout": {
+		"format": "🎹 {}", // piano keyboard. Normal keyboard: ⌨️
+		"exec": "keyboard_layout_monitor",
+		"on-click": "keyboard_layout_switcher"
+	}
+}

@@ -1,0 +1,58 @@
+(VSCode) 2024-08-24 11:28:20.034 [INFO]: No proxy settings found
+(VSCode) 2024-08-24 11:28:21.538 [INFO]: Creating manager directory: /tmp/43248ea3-6150-4c76-a2c3-f4b9dd5c3bdd/codeium/manager
+(VSCode) 2024-08-24 11:28:21.956 [INFO]: Using cached LS with valid crc32: /home/nathan/.vscode-oss/extensions/codeium.codeium-1.12.6-universal/dist/380c7c9c022eebd0772a9eca3800839b5b4db78c/language_server_linux_x64
+(VSCode) 2024-08-24 11:28:21.964 [INFO]: Language server started
+2024/08/24 11:28:22 maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined
+I0824 11:28:22.084344  5035 main.go:415] [Logging] Initialized the logger
+I0824 11:28:22.084436  5035 main.go:512] Setting GOMAXPROCS to 8
+I0824 11:28:22.084514  5035 main.go:672] Starting language server manager with pid 5035
+I0824 11:28:22.084571  5035 main.go:118] Manager acquired its lock file /tmp/43248ea3-6150-4c76-a2c3-f4b9dd5c3bdd/codeium/manager/locks/manager.lock
+I0824 11:28:22.085452  5035 main.go:257] Waiting for random port file in /tmp/43248ea3-6150-4c76-a2c3-f4b9dd5c3bdd/codeium/manager/child_random_port_1724491702084710545_1556598235259632958 to be created
+2024/08/24 11:28:22 maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined
+I0824 11:28:22.209843  5045 main.go:415] [Logging] Initialized the logger
+I0824 11:28:22.209907  5045 main.go:512] Setting GOMAXPROCS to 4
+I0824 11:28:22.210013  5045 main.go:666] Starting language server process with pid 5045
+I0824 11:28:22.210028  5045 server.go:161] Language server will attempt to listen on host 127.0.0.1
+I0824 11:28:22.210130  5045 server.go:168] Language server listening on random port at 44633
+I0824 11:28:22.210178  5045 proxy.go:113] proxyplease.proxy> No proxy provided. Attempting to infer from system.
+I0824 11:28:22.210196  5045 proxy.go:113] proxyplease.proxy> No proxy could be determined. Assuming a direct connection.
+I0824 11:28:22.210226  5045 client.go:589] [DEBUG] GET https://server.codeium.com/exa.api_server_pb.ApiServerService/GetCompletions
+I0824 11:28:22.817630  5045 unleash.go:91] Initializing Unleash
+I0824 11:28:23.225802  5045 unleash.go:111] Successfully initialized Unleash
+E0824 11:28:23.235471  5045 client_manager.go:270] Metadata is nil when trying to refresh user JWT
+I0824 11:28:23.235841  5045 server.go:363] Successfully created API server client
+I0824 11:28:23.266913  5045 server.go:372] Successfully initialized tokenizer
+E0824 11:28:23.267284  5045 context_module.go:367] unable to get default pinned context guideline: open /home/nathan/.codeium/codeium_settings.yaml: no such file or directory
+I0824 11:28:23.267347  5045 server.go:485] Local search is enabled, will index local files.
+I0824 11:28:23.267356  5045 server.go:489] Using 2 indexer workers
+I0824 11:28:23.267385  5045 sqlite_faiss_db_client.go:70] Using database at /home/nathan/.codeium/database/9c0694567290725d9dcba14ade58e297/2/MODEL_EMBED_6591
+I0824 11:28:23.277941  5045 sqlite_faiss_db_client.go:84] Successfully created embedding search database in 10ms
+I0824 11:28:23.278581  5045 indexer.go:215] Using 4 embed workers
+I0824 11:28:23.278623  5045 search_provider.go:269] Successfully created and started indexer
+I0824 11:28:23.278662  5045 search_provider.go:299] Successfully created embedding search provider with db client: &{0xc001b67140 0xc001de6200}
+I0824 11:28:23.282872  5045 server.go:564] Successfully created completion provider
+I0824 11:28:23.282960  5045 server.go:614] Child process attempting to acquire lock file /tmp/43248ea3-6150-4c76-a2c3-f4b9dd5c3bdd/codeium/manager/locks/child_lock_1724491702084727399_293592124524635083
+I0824 11:28:23.283014  5045 server.go:622] Child process acquired lock file /tmp/43248ea3-6150-4c76-a2c3-f4b9dd5c3bdd/codeium/manager/locks/child_lock_1724491702084727399_293592124524635083
+I0824 11:28:23.287556  5045 server.go:188] LSP listening on random port at 39613
+I0824 11:28:23.288083  5045 web_server.go:240] Chat Web Server listening at ws://127.0.0.1:35087
+39613
+I0824 11:28:23.291300  5035 main.go:293] Language server manager found random server port 44633
+I0824 11:28:23.291335  5035 main.go:294] Language server manager found random lsp port 39613
+I0824 11:28:23.291351  5035 main.go:301] Language server manager attempting to connect to language server at 127.0.0.1:44633
+I0824 11:28:23.312007  5035 main.go:172] Fixing language server port at 44633
+I0824 11:28:23.312035  5035 main.go:352] Language server manager successfully connected to new language server at 127.0.0.1:44633
+(VSCode) 2024-08-24 11:28:23.378 [INFO]: Found language server running on port 44633
+I0824 11:28:23.407874  5045 utils.go:185] Analyzing workspace files for /etc/sway/
+I0824 11:28:23.408057  5045 utils.go:245] Done analyzing workspace files for /etc/sway/
+I0824 11:28:23.408068  5045 lsp.go:208] Found 17 files in workspace /etc/sway/
+I0824 11:28:23.408200  5045 lsp.go:232] Adding workspace listener for [0xc00043b7a0]
+I0824 11:28:23.408304  5045 indexing_listener.go:238] Add workspace event with uid 1 for workspace /etc/sway/
+I0824 11:28:23.413053  5045 lazy_model.go:32] Successfully created faiss index
+I0824 11:28:23.420065  5045 indexing_listener.go:297] Done enqueue workspace with uid 1
+I0824 11:28:23.457407  5045 rpcs_miscellaneous.go:323] University version is up to date.
+I0824 11:28:23.463379  5045 rpcs_miscellaneous.go:205] Downloading changelog from https://exafunction.github.io/public/changelog/1.12.md
+I0824 11:28:23.473945  5045 rpcs_miscellaneous.go:209] No changelog found at https://exafunction.github.io/public/changelog/1.12.md
+(VSCode) 2024-08-24 11:30:11.076 [INFO]: Completion request was cancelled by token (428.6ms)
+(VSCode) 2024-08-24 11:30:15.008 [INFO]: Disposing language server process
+(VSCode) 2024-08-24 11:30:15.008 [INFO]: Deleting manager directory: /tmp/43248ea3-6150-4c76-a2c3-f4b9dd5c3bdd/codeium/manager
+(VSCode) 2024-08-24 11:30:15.010 [INFO]: Successfully disposed language server

@@ -1,0 +1,19 @@
+(VSCode) 2024-08-24 11:30:10.307 [INFO]: No proxy settings found
+(VSCode) 2024-08-24 11:30:11.563 [INFO]: Creating manager directory: /tmp/907a50aa-95dc-4681-b1a3-1e3622081f5c/codeium/manager
+(VSCode) 2024-08-24 11:30:12.090 [INFO]: Using cached LS with valid crc32: /home/nathan/.vscode-oss/extensions/codeium.codeium-1.12.6-universal/dist/380c7c9c022eebd0772a9eca3800839b5b4db78c/language_server_linux_x64
+(VSCode) 2024-08-24 11:30:12.100 [INFO]: Language server started
+2024/08/24 11:30:12 maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined
+I0824 11:30:12.239137  5945 main.go:415] [Logging] Initialized the logger
+I0824 11:30:12.239206  5945 main.go:512] Setting GOMAXPROCS to 8
+I0824 11:30:12.239291  5945 main.go:672] Starting language server manager with pid 5945
+I0824 11:30:12.239354  5945 main.go:118] Manager acquired its lock file /tmp/907a50aa-95dc-4681-b1a3-1e3622081f5c/codeium/manager/locks/manager.lock
+I0824 11:30:12.240112  5945 main.go:257] Waiting for random port file in /tmp/907a50aa-95dc-4681-b1a3-1e3622081f5c/codeium/manager/child_random_port_1724491812239512220_2596131062483998901 to be created
+2024/08/24 11:30:12 maxprocs: Leaving GOMAXPROCS=8: CPU quota undefined
+I0824 11:30:12.369936  5956 main.go:415] [Logging] Initialized the logger
+I0824 11:30:12.370000  5956 main.go:512] Setting GOMAXPROCS to 4
+I0824 11:30:12.370100  5956 main.go:666] Starting language server process with pid 5956
+I0824 11:30:12.370127  5956 server.go:161] Language server will attempt to listen on host 127.0.0.1
+I0824 11:30:12.370234  5956 server.go:168] Language server listening on random port at 39813
+I0824 11:30:12.370277  5956 proxy.go:113] proxyplease.proxy> No proxy provided. Attempting to infer from system.
+I0824 11:30:12.370295  5956 proxy.go:113] proxyplease.proxy> No proxy could be determined. Assuming a direct connection.
+I0824 11:30:12.370310  5956 client.go:589] [DEBUG] GET https://server.codeium.com/exa.api_server_pb.ApiServerService/GetCompletions

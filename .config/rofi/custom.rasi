@@ -1,0 +1,51 @@
+* {
+//lightbg: #141a1b;
+//background: #141a1b;
+//lightfg: #16a085;
+foreground: #eeeeee;
+
+}
+
+window {
+width: 50em;
+transparency: "real";
+
+}
+
+element alternate.normal {
+background-color:rgb(0,0,0,0.1);
+color:black;
+
+}
+
+element normal.normal {
+background-color:rgb(0,0,0,0.2);
+color:black;
+}
+
+element selected.normal {
+background-color:rgb(0,0,0,0);
+color:black;
+border:1;
+border-color:black;
+}
+
+
+inputbar{
+margin-bottom:10px;
+}
+
+
+element normal.hover {
+background-color:red;
+}
+
+
+listview{
+columns:3;
+}
+
+
+textbox {
+color:black;
+}

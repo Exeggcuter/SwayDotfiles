@@ -1,0 +1,8 @@
+[Unit]
+Description=swaymsg output  wallpaper service
+
+[Service]
+ExecStart=/home/nathan/Pitcures/Wallpaper/wallpaper.sh
+
+[Install]
+WantedBy=multi-user.target
