@@ -90,7 +90,7 @@ set $sleep_timeout_ac 3600
 set $sleep_delay 2
 
 ### Autostart applications definition. Can be removed soon-ish as it is being imported in userspace.
-include /etc/sway/autostart
+include $HOME/.config/sway/etc/autostart
 
 # hide cursor after 5 seconds of inactivty
 seat seat0 hide_cursor 5000
@@ -132,6 +132,6 @@ set $screenshot_selection_upload $pipe_selection | $upload_pipe
 
 set $update-manager '$HOME/.config/sway/usr/scripts/checkupdates.sh upgrade'
 
-include /etc/sway/autostart
+include $HOME/.config/sway/etc/autostart
 
 set $emoji-picker emoji-picker

@@ -1,6 +1,6 @@
 # definitions overrides for sway
 
-refer to /etc/sway/definitions for global definitions that can be overridden here
+refer to $HOME/.config/sway/etc/definitions for global definitions that can be overridden here
 
 e.g.:
 

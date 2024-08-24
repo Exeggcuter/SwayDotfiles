@@ -214,4 +214,4 @@ bar {
     }
 }
 
-include /etc/sway/config.d/*
+include $HOME/.config/sway/etc/config.d/*
