@@ -1,0 +1,25 @@
+set $mode_shutdown2 "\
+<span foreground='$color10'></span>  \
+<span foreground='$color5'> \
+<span foreground='$color10'>(<b>e</b>)</span>test \
+<span foreground='$color10'>(<b>s</b>)</span>firefox \
+<span foreground='$color10'>(<b>r</b>)</span>firefox \
+</span>"
+
+mode --pango_markup $mode_shutdown2 {
+
+    # test
+    $bindsym --no-warn e exec firefox
+
+    # shutdown
+    $bindsym --no-warn s exec firefox
+
+    # reboot
+    $bindsym --no-warn r exec firefox
+
+    # Return to default mode.
+    $bindsym --no-warn Escape mode "default"
+}
+
+## Launch // Exit Menu ##
+$bindsym $mod+Shift+t mode $mode_shutdown2

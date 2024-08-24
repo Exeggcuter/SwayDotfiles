@@ -2,7 +2,7 @@
 Description=swaymsg output rotate wallpaper service
 
 [Service]
-ExecStart=/usr/share/backgrounds/sway/sway_backgroud_changer.sh
+ExecStart=%h/.config/sway/usr/sway_background_changer.sh
 
 [Install]
 WantedBy=multi-user.target

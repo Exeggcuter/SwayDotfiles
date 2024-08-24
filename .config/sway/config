@@ -5,7 +5,7 @@
 # Read `man 5 sway` for a complete reference.
 
 # styles - set the folder for your theme definition file
-set $theme /usr/share/sway/themes/matcha-leaf
+set $theme $HOME/.config/sway/usr/themes/matcha-leaf
 
 # theme variables
 include $theme/theme.conf
@@ -14,31 +14,27 @@ include $theme/theme.conf
 include $HOME/.config/sway/definitions.d/theme.conf
 
 # global variables
-include /etc/sway/definitions
+include $HOME/.config/sway/etc/definitions
 
 # user variables can override global definitions
 include $HOME/.config/sway/definitions.d/*.conf
 
-include /etc/sway/inputs/*
+include $HOME/.config/sway/etc/inputs/*
 
 # enable modes
-include /etc/sway/modes/*
+include $HOME/.config/sway/etc/modes/*
 
 # only enable this if every app you use is compatible with wayland
 # xwayland disable
 
 # include additional configs e.g. to autostart applications
-include /etc/sway/config.d/*
+include $HOME/.config/sway/etc/config.d/*
 
 # user config
 include $HOME/.config/sway/config.d/*.conf
 
 # set wallpaper
-set $wallpapers_path /home/nathan/Pictures/Wallpaper/*
-exec /home/nathan/Pictures/wallpaper.sh $wallpapers_path
-
-exec code /etc/sway
-
-exec code /usr/share/sway
+set $wallpapers_path $HOME/Pictures/Wallpaper/*
+#exec $HOME/Pictures/wallpaper.sh $wallpapers_path
 
 exec code .config

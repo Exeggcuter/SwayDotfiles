@@ -1,6 +1,6 @@
 {
     "include": [
-        "/usr/share/sway/templates/waybar/config.jsonc"
+        "$HOME/.config/sway/usr/templates/waybar/config.jsonc"
     ]
 }
 
