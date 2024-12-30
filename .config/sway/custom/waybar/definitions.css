@@ -1,0 +1,4 @@
+@define-color good_color #00BFFF;
+@define-color warning_color #FFA500;
+@define-color error_color #DC143C;
+@define-color background_color rgb(255,0,0);
